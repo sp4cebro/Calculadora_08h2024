@@ -1,0 +1,58 @@
+html{
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+body{
+    background-color: grey;
+    text-align: center;
+    height: 100vh;
+    margin: 0px;
+    overflow: hidden;
+}
+/* Table rules */
+table{
+    height: 100%;
+    aspect-ratio: 5/8;
+}
+table, th, td{
+    border: 1px solid black;
+    border-collapse: collapse;
+    margin: 0;
+}
+/* Row rules */
+table>tbody>tr{
+    width: 100%;
+    aspect-ratio: 5;
+}
+table>tbody>tr>*{
+    width: 20%;
+    aspect-ratio: 1;
+}
+/* Table cell sub items */
+table>tbody>tr>td{
+    overflow: hidden;
+    background-color: whitesmoke;
+}
+table>tbody>tr>td>*{
+    height: 100%;
+    width: 100%
+}
+table>tbody>tr>td>input{
+    font-size: 1.1em;
+    text-align: center;
+}
+table>tbody>tr>td>button{
+    font-size: 1.2em;
+    background-color: black;
+    color: white;
+}
+/* Highlighted cells */
+table>tbody>tr>th{
+    background-color: indigo;
+}
+table>tbody>tr:not(:first-child, :last-child)>td:first-child{
+    background-color: blue;
+    font-weight: bold;
+}
